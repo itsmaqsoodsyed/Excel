@@ -1,0 +1,4 @@
+#vlookup and replace errors and zeros with blanks
+=IF(IFERROR(IF(VLOOKUP(A2,'Sheet2'!$A$1:$F$1880,2,0)=0,E2,VLOOKUP(A2,'Sheet2'!$A$1:$F$1880,2,0)),E2)=0,"",IFERROR(IF(VLOOKUP(A2,'Sheet2'!$A$1:$F$1880,2,0)=0,E2,VLOOKUP(A2,'Sheet2'!$A$1:$F$1880,2,0)),E2))
+
+
